@@ -20,9 +20,12 @@ network:
   allowed:
     - github.com
     - github.blog
+    - awesome-copilot.github.com
 engine:
   id: copilot
   copilot-sdk: true
+  env:
+    COPILOT_GITHUB_TOKEN: ${{ secrets.ZKTOKKENN }}
 ---
 
 # Update Mona's GitHub Info website
@@ -32,6 +35,7 @@ Use web-fetch to read these official sources and follow relevant article links:
 
 - GitHub Blog at https://github.blog/latest/
 - GitHub Changelog at https://github.blog/changelog/
+- Awesome Copilot workflows at https://awesome-copilot.github.com/workflows/
 
 Choose a small set of recent, verified updates relevant to Mona's notes.
 Update only site/content/github-info.md with concise explanations and direct source links.
