@@ -21,6 +21,7 @@ network:
     - github.com
     - github.blog
     - awesome-copilot.github.com
+model: gpt-6.1-sol
 engine:
   id: copilot
   copilot-sdk: true
